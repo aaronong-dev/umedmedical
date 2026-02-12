@@ -16,7 +16,7 @@ export default function Footer() {
           <a href="#medical-disclaimer">Medical Disclaimer</a>
         </nav>
         <p className="footer__copyright">
-          © {currentYear} UMed Medical. All rights reserved.
+          © {currentYear} UMED Medical. All rights reserved.
         </p>
       </div>
     </footer>

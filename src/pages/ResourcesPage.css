@@ -1,0 +1,462 @@
+.resources {
+  flex: 1;
+  background-color: #f7fafc;
+  padding: 0rem 1.5rem 4rem;
+  overflow-x: hidden;
+}
+
+.resources__header {
+  background-color: #e8eef4;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.resources__header-inner {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.resources__header-content {
+  min-width: 0;
+}
+
+.resources__header-image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #dce2e8;
+  flex-shrink: 0;
+}
+
+.resources__header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.resources__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.resources__breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-primary, #1a365d);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.resources__breadcrumb-link:hover {
+  opacity: 0.85;
+}
+
+.resources__breadcrumb-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  color: var(--text-primary, #1a365d);
+}
+
+.resources__breadcrumb-sep {
+  color: var(--text-primary, #1a365d);
+  opacity: 0.7;
+  margin: 0 0.1rem;
+}
+
+.resources__breadcrumb-current {
+  color: var(--text-primary, #1a365d);
+  font-weight: 500;
+}
+
+.resources__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+.resources__intro {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+  max-width: 72ch;
+}
+
+/* ===== Container & sections ===== */
+.resources__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.resources__section {
+  margin-top: 3rem;
+  padding: 0 0.5rem;
+}
+
+.resources__section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.resources__section-copy {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0 0 1rem;
+  max-width: 72ch;
+}
+
+/* ===== Clinical Insights cards ===== */
+.resources__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.resources__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(26, 54, 93, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.resources__card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 0.75rem;
+  line-height: 1.35;
+}
+
+.resources__card-summary {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0 0 1rem;
+  flex: 1;
+}
+
+.resources__card-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-primary, #0d3b4a);
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.resources__card-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Patient Education PDF blocks ===== */
+.resources__pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.resources__pdf-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(26, 54, 93, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  min-height: 140px;
+}
+
+.resources__pdf-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.resources__pdf-desc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0 0 1rem;
+  flex: 1;
+}
+
+.resources__pdf-btn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  background: #e8eef4;
+  border: 1px solid rgba(26, 54, 93, 0.2);
+  border-radius: 6px;
+  cursor: default;
+  opacity: 0.9;
+}
+
+/* ===== Referral section ===== */
+.resources__section--referral {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(26, 54, 93, 0.08);
+}
+
+.resources__referral-list {
+  margin: 0 0 1.25rem;
+  padding: 0 0 0 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-text-muted, #5a6c72);
+}
+
+.resources__referral-list li {
+  margin-bottom: 0.5rem;
+}
+
+.resources__referral-list li:last-child {
+  margin-bottom: 0;
+}
+
+.resources__referral-label {
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+}
+
+.resources__referral-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.resources__download-btn {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  background: #e8eef4;
+  border: 1px solid rgba(26, 54, 93, 0.2);
+  border-radius: 6px;
+  cursor: default;
+  opacity: 0.9;
+}
+
+/* ===== FAQ ===== */
+.resources__faq {
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.resources__faq-item {
+  margin: 0 0 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+}
+
+.resources__faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.resources__faq-q {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 0.35rem;
+}
+
+.resources__faq-a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+}
+
+/* ===== Evidence & Research ===== */
+.resources__section--evidence .resources__section-copy {
+  margin-bottom: 1.25rem;
+}
+
+.resources__citations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.resources__citation-card {
+  background: #f0f4f8;
+  border: 1px dashed rgba(26, 54, 93, 0.2);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #5a6c72);
+  font-style: italic;
+}
+
+/* ===== Final CTA ===== */
+.resources__section--cta {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #e8eef4;
+  border-radius: 8px;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.resources__section--cta .resources__section-title {
+  margin-bottom: 0.75rem;
+}
+
+.resources__cta-copy {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0 auto 1.5rem;
+  max-width: 42ch;
+}
+
+.resources__cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resources__cta-button {
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--text-primary, #1a365d);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.resources__cta-button:hover {
+  background: #0f2744;
+  transform: translateY(-1px);
+}
+
+.resources__cta-link {
+  font-size: 0.9375rem;
+  color: var(--text-primary, #1a365d);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.resources__cta-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .resources {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .resources__header {
+    padding: 2rem 1rem;
+  }
+
+  .resources__header-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .resources__header-image {
+    max-width: none;
+  }
+
+  .resources__breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .resources__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .resources__intro {
+    font-size: 1rem;
+  }
+
+  .resources__section {
+    margin-top: 2.5rem;
+  }
+
+  .resources__section-title {
+    font-size: 1.5rem;
+  }
+
+  .resources__section-copy {
+    font-size: 1rem;
+  }
+
+  .resources__cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .resources__card {
+    padding: 1.25rem;
+  }
+
+  .resources__pdf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resources__section--referral {
+    padding: 1.5rem 1rem;
+  }
+
+  .resources__referral-buttons {
+    flex-direction: column;
+  }
+
+  .resources__download-btn {
+    width: 100%;
+  }
+
+  .resources__section--cta {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .resources__citations {
+    grid-template-columns: 1fr;
+  }
+}

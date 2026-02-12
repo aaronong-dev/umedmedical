@@ -341,13 +341,6 @@
   color: var(--color-primary, #0d3b4a);
 }
 
-.home__faq-title-icon {
-  width: 37px;
-  height: 37px;
-  flex-shrink: 0;
-  margin-right: 0.1rem;
-}
-
 .home__faq-title {
   margin: 0;
   font-size: clamp(1.5rem, 3vw, 2.3rem);

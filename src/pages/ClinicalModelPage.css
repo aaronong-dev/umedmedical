@@ -1,0 +1,337 @@
+.clinical-model {
+  flex: 1;
+  background-color: #f7fafc;
+  padding: 0rem 1.5rem 4rem;
+  overflow-x: hidden;
+}
+
+.clinical-model__header {
+  background-color: #e8eef4;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.clinical-model__header-inner {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.clinical-model__header-content {
+  min-width: 0;
+}
+
+.clinical-model__header-image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #dce2e8;
+  flex-shrink: 0;
+}
+
+.clinical-model__header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.clinical-model__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.clinical-model__breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-primary, #1a365d);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.clinical-model__breadcrumb-link:hover {
+  opacity: 0.85;
+}
+
+.clinical-model__breadcrumb-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  color: var(--text-primary, #1a365d);
+}
+
+.clinical-model__breadcrumb-sep {
+  color: var(--text-primary, #1a365d);
+  opacity: 0.7;
+  margin: 0 0.1rem;
+}
+
+.clinical-model__breadcrumb-current {
+  color: var(--text-primary, #1a365d);
+  font-weight: 500;
+}
+
+.clinical-model__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+.clinical-model__intro {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+  max-width: 72ch;
+}
+
+/* ===== Content container ===== */
+.clinical-model__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* ===== Content sections ===== */
+.clinical-model__section {
+  margin-top: 3rem;
+  padding: 0 0.5rem;
+}
+
+.clinical-model__section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+/* Core Framework: 4 blocks */
+.clinical-model__blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.clinical-model__block {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(26, 54, 93, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.clinical-model__block-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-primary, #0d3b4a);
+  margin-bottom: 1rem;
+}
+
+.clinical-model__block-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.clinical-model__block-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.clinical-model__block-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+}
+
+/* Bullets & tagline */
+.clinical-model__bullets {
+  margin: 0 0 0 1.25rem;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+}
+
+.clinical-model__bullets li {
+  margin-bottom: 0.5rem;
+}
+
+.clinical-model__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.clinical-model__tagline {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 1rem 0 0;
+  font-style: italic;
+}
+
+/* Card-style section (Escalation) */
+.clinical-model__section--card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(26, 54, 93, 0.08);
+}
+
+/* Bottom CTA banner */
+.clinical-model__section--cta {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #e8eef4;
+  border-radius: 8px;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.clinical-model__cta-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
+.clinical-model__cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.clinical-model__cta-button {
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--text-primary, #1a365d);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.clinical-model__cta-button:hover {
+  background: #0f2744;
+  transform: translateY(-1px);
+}
+
+.clinical-model__cta-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary, #1a365d);
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.clinical-model__cta-link:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .clinical-model__blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .clinical-model {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .clinical-model__header {
+    padding: 2rem 1rem;
+  }
+
+  .clinical-model__header-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .clinical-model__header-image {
+    max-width: none;
+  }
+
+  .clinical-model__breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .clinical-model__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .clinical-model__intro {
+    font-size: 1rem;
+  }
+
+  .clinical-model__section {
+    margin-top: 2.5rem;
+  }
+
+  .clinical-model__section-title {
+    font-size: 1.5rem;
+  }
+
+  .clinical-model__blocks {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .clinical-model__block {
+    padding: 1.25rem;
+  }
+
+  .clinical-model__block-desc,
+  .clinical-model__bullets {
+    font-size: 1rem;
+  }
+
+  .clinical-model__section--card {
+    padding: 1.5rem 1rem;
+  }
+
+  .clinical-model__section--cta {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .clinical-model__cta-title {
+    font-size: 1.25rem;
+  }
+
+  .clinical-model__cta-actions {
+    flex-direction: column;
+  }
+}

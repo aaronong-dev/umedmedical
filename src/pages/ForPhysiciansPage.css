@@ -1,0 +1,356 @@
+.physicians {
+  flex: 1;
+  background-color: #f7fafc;
+  padding: 0rem 1.5rem 4rem;
+  overflow-x: hidden;
+}
+
+.physicians__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* First section - full width, same background as About */
+.physicians__header {
+  background-color: #e8eef4;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.physicians__header-inner {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.physicians__header-content {
+  min-width: 0;
+}
+
+.physicians__header-image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #dce2e8;
+  flex-shrink: 0;
+}
+
+.physicians__header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* Breadcrumb - same as About page */
+.physicians__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.physicians__breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-primary, #1a365d);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.physicians__breadcrumb-link:hover {
+  opacity: 0.85;
+}
+
+.physicians__breadcrumb-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  color: var(--text-primary, #1a365d);
+}
+
+.physicians__breadcrumb-sep {
+  color: var(--text-primary, #1a365d);
+  opacity: 0.7;
+  margin: 0 0.1rem;
+}
+
+.physicians__breadcrumb-current {
+  color: var(--text-primary, #1a365d);
+  font-weight: 500;
+}
+
+/* Title */
+.physicians__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+/* Intro */
+.physicians__intro {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+  max-width: 72ch;
+}
+
+@media (max-width: 640px) {
+  .physicians {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .physicians__header {
+    padding: 2rem 1rem;
+  }
+
+  .physicians__header-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .physicians__header-image {
+    max-width: none;
+  }
+
+  .physicians__breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .physicians__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .physicians__intro {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Content sections (after first section) ===== */
+.physicians__section {
+  margin-top: 3rem;
+  padding: 0 0.5rem;
+}
+
+.physicians__section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.physicians__section-copy {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0;
+  max-width: 72ch;
+}
+
+.physicians__section-tagline {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+  margin: 1rem 0 0;
+  font-style: italic;
+}
+
+/* Bullet lists */
+.physicians__bullets {
+  margin: 0 0 0 1.25rem;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, #5a6c72);
+}
+
+.physicians__bullets li {
+  margin-bottom: 0.5rem;
+}
+
+.physicians__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.physicians__bullets--grid {
+  list-style: none;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem 1.5rem;
+}
+
+.physicians__bullets--grid li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.physicians__bullets--grid li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary, #0d3b4a);
+  font-weight: 700;
+}
+
+/* Support section: slightly emphasized */
+.physicians__section--support {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(26, 54, 93, 0.08);
+}
+
+/* Steps (referral process) */
+.physicians__section--steps {
+  margin-top: 3.5rem;
+}
+
+.physicians__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.physicians__step {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  counter-increment: step;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--color-text-muted, #5a6c72);
+}
+
+.physicians__step-num {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--text-primary, #1a365d);
+  min-width: 6rem;
+}
+
+.physicians__step-num::before {
+  content: "Step " counter(step) " — ";
+}
+
+.physicians__step-label {
+  flex: 1;
+}
+
+/* Final CTA */
+.physicians__section--cta {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #e8eef4;
+  border-radius: 8px;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.physicians__section--cta .physicians__section-title {
+  margin-bottom: 0.75rem;
+}
+
+.physicians__cta-copy {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 0 auto 1.5rem;
+  max-width: 42ch;
+}
+
+.physicians__cta-button {
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--text-primary, #1a365d);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.physicians__cta-button:hover {
+  background: #0f2744;
+  transform: translateY(-1px);
+}
+
+.physicians__cta-contact {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #5a6c72);
+  margin: 1rem 0 0;
+}
+
+.physicians__cta-link {
+  color: var(--text-primary, #1a365d);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.physicians__cta-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive: content sections */
+@media (max-width: 640px) {
+  .physicians__section {
+    margin-top: 2.5rem;
+  }
+
+  .physicians__section-title {
+    font-size: 1.5rem;
+  }
+
+  .physicians__section-copy,
+  .physicians__bullets {
+    font-size: 1rem;
+  }
+
+  .physicians__section--support {
+    padding: 1.5rem 1rem;
+  }
+
+  .physicians__bullets--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .physicians__step {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .physicians__step-num {
+    min-width: 0;
+  }
+
+  .physicians__section--cta {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+}
