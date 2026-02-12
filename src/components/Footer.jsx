@@ -6,8 +6,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <div className="footer__brand">UMed Medical</div>
-        <p className="footer__tagline">www.umedmedical.com</p>
+        <a href="/" className="footer__brand" aria-label="UMed Medical home">
+          <img src="/logo.png" alt="" className="footer__logo" />
+        </a>
         <nav className="footer__links">
           <a href="#hipaa-notice">HIPAA Notice</a>
           <a href="#privacy-policy">Privacy Policy</a>

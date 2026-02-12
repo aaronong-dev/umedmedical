@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-surface, #0d3b4a);
+  background: var(--text-primary, #1a365d);
   color: var(--color-surface-text, #f5f5f0);
   padding: 2.5rem 2rem;
   margin-top: auto;
@@ -12,15 +12,24 @@
 }
 
 .footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
 }
 
-.footer__tagline {
-  font-size: 0.9rem;
-  opacity: 0.85;
-  margin: 0 0 1.25rem;
+.footer__brand:hover {
+  opacity: 0.9;
+}
+
+.footer__logo {
+  display: block;
+  height: 1.75rem;
+  width: auto;
 }
 
 .footer__links {
