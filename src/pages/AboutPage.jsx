@@ -30,7 +30,7 @@ export default function AboutPage() {
           </div>
           <div className="about__header-image-wrap">
             <img
-              src="https://placehold.co/480x320/e8eef4/9ca3af?text=About+UMED"
+              src="/about-image.png"
               alt=""
               className="about__header-image"
             />
@@ -39,10 +39,9 @@ export default function AboutPage() {
       </section>
 
       <div className="about__container">
-        <section className="about__mission" aria-labelledby="about-mission-heading">
-          <h2 id="about-mission-heading" className="about__mission-title">Our Mission</h2>
+        <section className="about__mission" aria-label="Our mission">
           <p className="about__mission-text">
-            To extend physician care beyond the walls of the clinic through skilled nursing oversight, real-time clinical monitoring, and proactive patient engagement. We exist to:
+            Our mission is to extend physician care beyond the walls of the clinic through skilled nursing oversight, real-time clinical monitoring, and proactive patient engagement — we exist to:
           </p>
           <div className="about__mission-cards">
             <div className="about__mission-card">
@@ -63,7 +62,7 @@ export default function AboutPage() {
         <section className="about__different" aria-labelledby="about-different-heading">
           <div className="about__different-image-wrap">
             <img
-              src="https://placehold.co/560x400/f0f4f8/9ca3af?text=Placeholder"
+              src="/program.png"
               alt=""
               className="about__different-image"
             />
