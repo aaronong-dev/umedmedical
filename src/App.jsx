@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import TopInfoBar from './components/TopInfoBar'
 import MiddleBar from './components/MiddleBar'
 import Navbar from './components/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
@@ -14,6 +15,7 @@ import ResourcesPage from './pages/ResourcesPage'
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app">
         <TopInfoBar />
         <MiddleBar />

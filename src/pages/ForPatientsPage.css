@@ -92,13 +92,83 @@
   background-color: #2d7a4f;
 }
 
+/* Who this program is for – referral-style cards (same as For Physicians Ideal Referral Profiles) */
+.patients__section--who-cards {
+  text-align: center;
+}
+
+.patients__section--who-cards .patients__section-title,
+.patients__section--who-cards .patients__section-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.patients__section--who-cards .patients__section-text {
+  margin-bottom: 1.25rem;
+}
+
+.patients__referral-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0 auto;
+  max-width: 820px;
+}
+
+.patients__referral-card {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: var(--text-primary, #1a365d);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(26, 54, 93, 0.1);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.patients__referral-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--color-primary, #0d3b4a);
+}
+
+.patients__referral-card-icon svg,
+.patients__referral-card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.patients__referral-card-label {
+  line-height: 1.3;
+}
+
+.patients__referral-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(26, 54, 93, 0.18);
+}
+
 .patients__section--highlight {
-  background-color: #e8eef4;
+  background-color: #ffffff;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-  padding: 2rem 1.5rem;
-  border-radius: 8px;
-  border-bottom-color: transparent;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 1.5rem 1.5rem;
+  border-radius: 0px;
+  border: 1px solid #e4e4e4;
 }
 
 .patients__section--highlight .patients__section-text {
@@ -140,46 +210,47 @@
   color: var(--color-text-muted, #5a6c72);
 }
 
-/* CTA section */
+/* CTA section - full-width with background image */
 .patients__section--cta {
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/patients-cta.jpg) center / cover no-repeat;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-radius: 0;
+  border-bottom: none;
+  color: #fff;
 }
 
 .patients__section--cta .patients__section-title {
+  color: #fff;
   margin-bottom: 1rem;
 }
 
-.patients__section--cta .patients__section-text {
-  margin-bottom: 1.5rem;
-}
-
-.patients__cta-wrap {
-  max-width: 72ch;
+.patients__cta-copy {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 auto 1.25rem;
+  max-width: 36ch;
 }
 
 .patients__cta-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
   background-color: var(--text-primary, #1a365d);
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .patients__cta-button:hover {
-  opacity: 0.9;
   background-color: #2c5282;
-}
-
-.patients__cta-note {
-  margin: 1rem 0 0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--color-text-muted, #5a6c72);
+  transform: translateY(-1px);
 }
 
 /* First section - full width, same background as About */
@@ -194,30 +265,41 @@
 .patients__header-inner {
   max-width: 1230px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2.5rem;
-  align-items: start;
 }
 
 .patients__header-content {
   min-width: 0;
 }
 
-.patients__header-image-wrap {
+/* How telemonitoring works – white container, image left, content right */
+.patients__how-box {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.5fr) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  background-color: #ffffff;
   border-radius: 8px;
-  overflow: hidden;
-  background: #dce2e8;
-  flex-shrink: 0;
+  padding: 2rem 2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.patients__header-image {
+.patients__how-image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f0f4f8;
+}
+
+.patients__how-image {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 480px;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.patients__how-content {
+  min-width: 0;
 }
 
 /* Breadcrumb - same as About page */
@@ -290,13 +372,14 @@
     padding: 2rem 1rem;
   }
 
-  .patients__header-inner {
+  .patients__how-box {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
   }
 
-  .patients__header-image {
-    max-width: none;
+  .patients__how-image-wrap {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .patients__breadcrumb {
@@ -327,8 +410,22 @@
     padding: 1.5rem 1rem;
   }
 
+  .patients__referral-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .patients__referral-card {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
   .patients__step-num {
     min-width: 4rem;
+  }
+
+  .patients__section--cta {
+    margin-top: 3rem;
+    padding: 2.5rem 1rem;
   }
 
   .patients__cta-button {

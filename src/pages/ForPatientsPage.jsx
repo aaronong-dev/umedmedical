@@ -24,20 +24,22 @@ export default function ForPatientsPage() {
               UMED Medical’s telemonitoring program keeps you connected to your care team between office visits. We help you manage chronic conditions with regular check-ins, remote monitoring, and timely support — so you can stay on track with your health goals and get help when you need it.
             </p>
           </div>
-          <div className="patients__header-image-wrap">
-            <img
-              src="https://placehold.co/480x320/e8eef4/9ca3af?text=For+Patients"
-              alt=""
-              className="patients__header-image"
-            />
-          </div>
         </div>
       </section>
 
       <div className="patients__container">
         {/* 1) How telemonitoring works */}
         <section className="patients__section" aria-labelledby="patients-how-heading">
-          <h2 id="patients-how-heading" className="patients__section-title">How Telemonitoring Works</h2>
+          <div className="patients__how-box">
+            <div className="patients__how-image-wrap">
+              <img
+                src="/telemonitoring.jpg"
+                alt=""
+                className="patients__how-image"
+              />
+            </div>
+            <div className="patients__how-content">
+              <h2 id="patients-how-heading" className="patients__section-title">How Telemonitoring Works</h2>
           <p className="patients__section-lead">It’s simple. Here’s what happens:</p>
           <ul className="patients__list">
             <li>You receive easy-to-use monitoring equipment (for example, a blood pressure device).</li>
@@ -46,21 +48,64 @@ export default function ForPatientsPage() {
             <li>If something changes, we contact you and coordinate with your doctor when needed.</li>
           </ul>
           <p className="patients__section-text">It’s not complicated — and support is always available when you need it.</p>
+            </div>
+          </div>
         </section>
 
-        {/* 2) Who this program is for */}
-        <section className="patients__section" aria-labelledby="patients-who-heading">
+        {/* 2) Who this program is for - same cards as Ideal Referral Profiles (For Physicians) */}
+        <section className="patients__section patients__section--who-cards" aria-labelledby="patients-who-heading">
           <h2 id="patients-who-heading" className="patients__section-title">Who This Program Is For</h2>
           <p className="patients__section-text">This may be right for you if:</p>
-          <ul className="patients__list patients__list--bullets">
-            <li>You have CHF (congestive heart failure)</li>
-            <li>You have COPD</li>
-            <li>You have diabetes</li>
-            <li>You have high blood pressure</li>
-            <li>You recently left the hospital</li>
-            <li>You have multiple chronic conditions</li>
-            <li>You face medication management challenges</li>
-          </ul>
+          <div className="patients__referral-cards">
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/chf.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Congestive Heart Failure</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/copd.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Chronic Obstructive Pulmonary Disease</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/diabetes.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Diabetes</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/hypertension.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Hypertension</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/post-hospital.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Post-hospital discharge</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/chronic.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Multiple chronic conditions</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/frequent-er.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Frequent ER utilizers</span>
+            </div>
+            <div className="patients__referral-card">
+              <span className="patients__referral-card-icon" aria-hidden>
+                <img src="/icons/management.png" alt="" />
+              </span>
+              <span className="patients__referral-card-label">Medication management challenges</span>
+            </div>
+          </div>
         </section>
 
         {/* 3) What support you'll receive */}
@@ -79,7 +124,7 @@ export default function ForPatientsPage() {
 
         {/* 4) Bilingual care */}
         <section className="patients__section patients__section--highlight" aria-labelledby="patients-bilingual-heading">
-          <h2 id="patients-bilingual-heading" className="patients__section-title">Bilingual Care (English & Spanish)</h2>
+          <h2 id="patients-bilingual-heading" className="patients__section-title">Bilingual Care</h2>
           <p className="patients__section-text">We offer support in English and Spanish. Our team can help you understand instructions, medications, and care plans in the language you’re most comfortable with. You’ll work with a real clinical team — not a call center.</p>
         </section>
 
@@ -118,14 +163,11 @@ export default function ForPatientsPage() {
           </ol>
         </section>
 
-        {/* 7) Final reassurance + CTA */}
+        {/* 7) Final CTA */}
         <section className="patients__section patients__section--cta" aria-labelledby="patients-cta-heading">
           <h2 id="patients-cta-heading" className="patients__section-title">You’re Not Doing This Alone</h2>
-          <p className="patients__section-text">Our team is here to support you between visits, keep you connected to your care plan, and respond when your numbers change. Whether you’re managing a chronic condition or recovering from a hospital stay, we’re with you every step of the way.</p>
-          <div className="patients__cta-wrap">
-            <Link to="/resources" className="patients__cta-button">Ask Your Doctor About Telemonitoring</Link>
-            <p className="patients__cta-note">If you’re a patient or caregiver interested in telemonitoring, enrollment typically starts with a physician referral. Ask your doctor if this program is right for you, or contact our team to learn more.</p>
-          </div>
+          <p className="patients__cta-copy">We’re here to support you between visits and keep you connected to your care.</p>
+          <Link to="/resources" className="patients__cta-button">Ask Your Doctor About Telemonitoring</Link>
         </section>
       </div>
     </main>

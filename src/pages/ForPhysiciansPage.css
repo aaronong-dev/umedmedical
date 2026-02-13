@@ -246,6 +246,7 @@
 /* Ideal Referral Profiles – cards */
 .physicians__section--referrals {
   text-align: center;
+  padding-top: 50px;
 }
 
 .physicians__section--referrals .physicians__section-title {
@@ -307,7 +308,7 @@
 
 /* Steps (referral process) - card design with icons and arrows */
 .physicians__section--steps {
-  margin-top: 3.5rem;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -370,7 +371,7 @@
   height: 1.5rem;
   padding: 0 0.35rem;
   border-radius: 50%;
-  background: #c53030;
+  background: #5b9bd5;
   color: #fff;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -396,7 +397,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #c53030;
+  color: #5b9bd5;
   align-self: center;
   padding: 0 0.25rem;
 }
@@ -411,20 +412,22 @@
   margin-top: 4rem;
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background: #e8eef4;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/physician-cta.jpg) center / cover no-repeat;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   border-radius: 0;
+  color: #fff;
 }
 
 .physicians__section--cta .physicians__section-title {
+  color: #fff;
   margin-bottom: 0.75rem;
 }
 
 .physicians__cta-copy {
   font-size: 1.125rem;
   line-height: 1.65;
-  color: var(--color-text-muted, #5a6c72);
+  color: rgba(255, 255, 255, 0.95);
   margin: 0 auto 1.5rem;
   max-width: 42ch;
 }
@@ -448,12 +451,12 @@
 
 .physicians__cta-contact {
   font-size: 0.9375rem;
-  color: var(--color-text-muted, #5a6c72);
+  color: rgba(255, 255, 255, 0.9);
   margin: 1rem 0 0;
 }
 
 .physicians__cta-link {
-  color: var(--text-primary, #1a365d);
+  color: #fff;
   font-weight: 500;
   text-decoration: underline;
 }

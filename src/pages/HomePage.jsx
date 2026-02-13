@@ -16,20 +16,20 @@ export default function HomePage() {
 
       <section className="home__section home__section--audience" aria-label="Get started">
         <div className="home__cards home__cards--audience">
-          <a href="/patients" className="home__card home__card--audience">
-            <div className="home__card-image-wrap">
-              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="" className="home__card-image" />
-            </div>
-            <h3 className="home__card-title">For patients</h3>
-            <span className="home__card-cta">See our care in action <span className="home__card-chevron" aria-hidden>→</span></span>
-          </a>
-          <a href="/doctors" className="home__card home__card--audience">
+          <Link to="/for-physicians" className="home__card home__card--audience">
             <div className="home__card-image-wrap">
               <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="" className="home__card-image" />
             </div>
             <h3 className="home__card-title">For physicians</h3>
             <span className="home__card-cta">Explore opportunities <span className="home__card-chevron" aria-hidden>→</span></span>
-          </a>
+          </Link>
+          <Link to="/for-patients" className="home__card home__card--audience">
+            <div className="home__card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="" className="home__card-image" />
+            </div>
+            <h3 className="home__card-title">For patients</h3>
+            <span className="home__card-cta">See our care in action <span className="home__card-chevron" aria-hidden>→</span></span>
+          </Link>
         </div>
       </section>
 
