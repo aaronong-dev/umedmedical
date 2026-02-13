@@ -49,24 +49,25 @@ export default function ForPhysiciansPage() {
           <p className="physicians__section-tagline">You retain clinical authority. We provide structured oversight.</p>
         </section>
 
-        {/* 4) Differentiator */}
-        <section className="physicians__section physicians__section--nursing" aria-labelledby="physicians-differentiator-heading">
-          <div className="physicians__nursing-inner">
-            <div className="physicians__nursing-image-wrap">
-              <img
-                src="/monitoring.jpg"
-                alt="Healthcare professional holding a medical monitoring device"
-                className="physicians__nursing-image"
-              />
-            </div>
-            <div className="physicians__nursing-content">
+        {/* 4) Skilled Nursing Monitoring – image left (outside container), white container right */}
+        <div className="physicians__nursing-wrap">
+          <div className="physicians__nursing-image-wrap">
+            <img
+              src="/monitoring.jpg"
+              alt="Healthcare professional holding a medical monitoring device"
+              className="physicians__nursing-image"
+            />
+          </div>
+          <div className="physicians__nursing-container">
+            <section className="physicians__section physicians__section--nursing" aria-labelledby="physicians-differentiator-heading">
               <h2 id="physicians-differentiator-heading" className="physicians__section-title">Skilled Nursing Monitoring</h2>
               <p className="physicians__section-copy">
                 Many RPM programs rely on automated alerts or call centers. Our patients are monitored by licensed clinical staff who evaluate trends (not isolated readings), contact patients when changes occur, reinforce care plans, and escalate clinically significant findings to physicians via structured protocols.
               </p>
-            </div>
+              <Link to="/clinical-model" className="physicians__nursing-button">Learn More</Link>
+            </section>
           </div>
-        </section>
+        </div>
 
         {/* 5) Conditions / Ideal Referrals */}
         <section className="physicians__section physicians__section--referrals" aria-labelledby="physicians-referrals-heading">

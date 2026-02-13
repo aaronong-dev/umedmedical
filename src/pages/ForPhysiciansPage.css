@@ -199,48 +199,88 @@
   line-height: 1;
 }
 
-/* Skilled Nursing Monitoring – image left, content right */
-.physicians__section--nursing {
-  padding: 0 0.5rem;
-}
-
-.physicians__nursing-inner {
+/* Skilled Nursing Monitoring – image left (outside container), white container right */
+.physicians__nursing-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
+  margin: 4rem 0rem;
 }
 
 .physicians__nursing-image-wrap {
-  border-radius: 0px;
+  border-radius: 0;
   overflow: hidden;
   background: #dce2e8;
-  flex-shrink: 0;
-  justify-self: center;
+  margin-left: 5rem;
 }
 
 .physicians__nursing-image {
   display: block;
-  width: 100%;
+  width: 600px;
   height: auto;
-  max-width: 450px;
-  aspect-ratio: 400 / 280;
-  object-fit: cover;
+  object-fit: fill;
+
 }
 
-.physicians__nursing-content {
-  text-align: right;
-  min-width: 0;
+.physicians__nursing-container {
+  padding: 4rem 1.5rem;
+  transform: translateY(5rem) translateX(-7rem);
+  background: #fff;
 }
 
-.physicians__nursing-content .physicians__section-title {
+.physicians__section--nursing {
+  padding: 0;
+  margin: 0;
+}
+
+.physicians__section--nursing .physicians__section-title {
   margin-bottom: 1rem;
 }
 
-.physicians__nursing-content .physicians__section-copy {
-  margin-left: auto;
+.physicians__section--nursing .physicians__section-copy {
+  margin: 0;
   max-width: 52ch;
   text-align: justify;
+}
+
+.physicians__nursing-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.65rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary, #1a365d);
+  background: transparent;
+  border: 2px solid var(--text-primary, #1a365d);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.physicians__nursing-button:hover {
+  background: var(--text-primary, #1a365d);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .physicians__nursing-wrap {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .physicians__nursing-image-wrap {
+    max-width: 100%;
+  }
+
+  .physicians__nursing-image {
+    max-width: 100%;
+  }
+
+  .physicians__section--nursing .physicians__section-copy {
+    text-align: left;
+  }
 }
 
 /* Ideal Referral Profiles – cards */
@@ -486,27 +526,6 @@
 
   .physicians__section--support .physicians__section-title {
     font-size: 1.25rem;
-  }
-
-  .physicians__section--nursing .physicians__nursing-inner {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .physicians__nursing-image-wrap {
-    max-width: 100%;
-  }
-
-  .physicians__nursing-image {
-    max-width: 100%;
-  }
-
-  .physicians__nursing-content {
-    text-align: left;
-  }
-
-  .physicians__nursing-content .physicians__section-copy {
-    margin-left: 0;
   }
 
   .physicians__referral-cards {
