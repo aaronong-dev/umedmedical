@@ -10,9 +10,21 @@
   margin: 0 auto;
 }
 
+/* Wrapper for Benefits + What to Expect with white background */
+.patients__white-wrap {
+  background-color: #ffffff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 50px;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
 /* Content sections below header */
 .patients__section {
   padding: 2.5rem 0;
+  padding-bottom: 60px;
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -90,6 +102,27 @@
 
 .patients__list--benefits li::before {
   background-color: #2d7a4f;
+}
+
+.patients__section--benefits {
+  text-align: center;
+}
+
+.patients__section--benefits .patients__section-title,
+.patients__section--benefits .patients__section-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.patients__section--benefits .patients__section-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.patients__section--benefits .patients__section-text {
+  max-width: 100ch;
+  color: black;
 }
 
 /* Who this program is for – referral-style cards (same as For Physicians Ideal Referral Profiles) */
@@ -175,51 +208,97 @@
   margin-bottom: 0;
 }
 
-/* Timeline steps */
-.patients__steps {
+/* Timeline – horizontal line with numbered nodes */
+.patients__timeline {
   list-style: none;
   padding: 0;
   margin: 0;
-  counter-reset: step;
-  max-width: 72ch;
-}
-
-.patients__step {
+  position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-  counter-increment: step;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 2px;
 }
 
-.patients__step:last-child {
-  margin-bottom: 0;
+/* Horizontal line */
+.patients__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16px;
+  height: 2px;
+  background: linear-gradient(to right, #cbd5e0, #94a3b8);
+  border-radius: 1px;
+  z-index: 0;
 }
 
-.patients__step-num {
+.patients__timeline-item {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.patients__timeline-marker {
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--text-primary, #1a365d);
+  color: #fff;
   font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(26, 54, 93, 0.25);
+  border: 3px solid #f7fafc;
+  margin-bottom: 1rem;
+}
+
+.patients__timeline-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.patients__timeline-label {
+  display: block;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-primary, #1a365d);
-  min-width: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
 }
 
-.patients__step-text {
-  font-size: 1rem;
-  line-height: 1.6;
+.patients__timeline-text {
+  font-size: 0.9375rem;
+  line-height: 1.5;
   color: var(--color-text-muted, #5a6c72);
+  margin: 0;
 }
 
 /* What to expect section - wavy divider at bottom */
 .patients__section--expect {
   position: relative;
-  padding-bottom: 1.5rem;
   border-bottom: none;
+  text-align: center;
+}
+
+.patients__section--expect .patients__section-title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .patients__expect-wave-wrap {
   position: absolute;
-  bottom: -50px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%) scaleY(-1);
   width: 100vw;
@@ -231,7 +310,7 @@
 .patients__expect-wave {
   width: 100%;
   height: 100%;
-  color: #f7fafc;
+  color: #fff;
   line-height: 0;
 }
 
@@ -243,7 +322,6 @@
 
 /* CTA section - full-width with background image; extra bottom padding so footer can overlay */
 .patients__section--cta {
-  margin-top: 4rem;
   text-align: center;
   padding: 3rem 1.5rem 7rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/patients-cta.jpg) center / cover no-repeat;
@@ -333,6 +411,41 @@
   min-width: 0;
 }
 
+/* What support you'll receive – image outside left, white container right */
+.patients__support-wrap {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 1.2fr);
+  gap: 0rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.patients__support-image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f0f4f8;
+  transform: translateX(-80px);
+  z-index: 1;
+}
+
+.patients__support-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
+.patients__support-box {
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  min-width: 0;
+  transform: translateX(95px) translateY(70px);
+  z-index: 2;
+}
+
 /* Breadcrumb - same as About page */
 .patients__breadcrumb {
   display: flex;
@@ -413,6 +526,19 @@
     margin: 0 auto;
   }
 
+  .patients__support-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .patients__support-image-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .patients__support-box {
+    padding: 1.5rem 1.25rem;
+  }
+
   .patients__breadcrumb {
     margin-bottom: 1.5rem;
     font-size: 0.8125rem;
@@ -435,6 +561,10 @@
     margin-bottom: 0.75rem;
   }
 
+  .patients__white-wrap {
+    padding: 0 1rem;
+  }
+
   .patients__section--highlight {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -450,8 +580,45 @@
     font-size: 0.875rem;
   }
 
-  .patients__step-num {
-    min-width: 4rem;
+  .patients__timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+    gap: 0;
+  }
+
+  .patients__timeline::before {
+    left: 15px;
+    top: 14px;
+    bottom: 14px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(to bottom, #cbd5e0, #94a3b8);
+  }
+
+  .patients__timeline-item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .patients__timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .patients__timeline-marker {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8125rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .patients__timeline-content {
+    padding-top: 0.15rem;
   }
 
   .patients__section--cta {

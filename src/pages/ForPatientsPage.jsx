@@ -110,16 +110,27 @@ export default function ForPatientsPage() {
 
         {/* 3) What support you'll receive */}
         <section className="patients__section" aria-labelledby="patients-support-heading">
-          <h2 id="patients-support-heading" className="patients__section-title">What Support You’ll Receive</h2>
-          <p className="patients__section-lead">You’re not just sending numbers.</p>
-          <p className="patients__section-text">Our licensed nursing team provides real support:</p>
-          <ul className="patients__list">
-            <li>Reviews your readings regularly</li>
-            <li>Calls when something looks concerning</li>
-            <li>Helps you understand your care plan</li>
-            <li>Encourages medication and care plan follow-through</li>
-            <li>Communicates with your physician when needed</li>
-          </ul>
+          <div className="patients__support-wrap">
+            <div className="patients__support-box">
+              <h2 id="patients-support-heading" className="patients__section-title">What Support You’ll Receive</h2>
+              <p className="patients__section-lead">You’re not just sending numbers.</p>
+              <p className="patients__section-text">Our licensed nursing team provides real support:</p>
+              <ul className="patients__list">
+                <li>Reviews your readings regularly</li>
+                <li>Calls when something looks concerning</li>
+                <li>Helps you understand your care plan</li>
+                <li>Encourages medication and care plan follow-through</li>
+                <li>Communicates with your physician when needed</li>
+              </ul>
+            </div>
+            <div className="patients__support-image-wrap">
+              <img
+                src="/support-receive.jpg"
+                alt="Healthcare professional on a support call"
+                className="patients__support-image"
+              />
+            </div>
+          </div>
         </section>
 
         {/* 4) Bilingual care */}
@@ -128,37 +139,49 @@ export default function ForPatientsPage() {
           <p className="patients__section-text">We offer support in English and Spanish. Our team can help you understand instructions, medications, and care plans in the language you’re most comfortable with. You’ll work with a real clinical team — not a call center.</p>
         </section>
 
-        {/* 5) Benefits for patients */}
-        <section className="patients__section" aria-labelledby="patients-benefits-heading">
-          <h2 id="patients-benefits-heading" className="patients__section-title">Benefits for Patients</h2>
-          <ul className="patients__list patients__list--benefits">
-            <li>Peace of mind between appointments</li>
-            <li>Faster response when readings change</li>
-            <li>Support staying on track with your health goals</li>
-            <li>May help reduce preventable ER visits and readmissions</li>
-            <li>Safer recovery after discharge</li>
-          </ul>
-        </section>
+        <div className="patients__white-wrap">
+          {/* 5) Benefits for patients */}
+          <section className="patients__section patients__section--benefits" aria-labelledby="patients-benefits-heading">
+            <h2 id="patients-benefits-heading" className="patients__section-title">Benefits for Patients</h2>
+            <p className="patients__section-text">
+              Our telemonitoring program gives you peace of mind between appointments. When your readings change, our team can respond quickly — so you get support when it matters, not only at your next visit. We help you stay on track with your health goals through regular check-ins and clear guidance.
+            </p>
+            <p className="patients__section-text">
+              For many patients, this kind of support may help reduce preventable ER visits and readmissions. After a hospital stay, having a nurse in your corner as you recover at home can make your recovery safer and more confident.
+            </p>
+          </section>
 
-        {/* 6) What to expect after your doctor refers you */}
-        <section className="patients__section patients__section--expect" aria-labelledby="patients-expect-heading">
+          {/* 6) What to expect after your doctor refers you - timeline */}
+          <section className="patients__section patients__section--expect" aria-labelledby="patients-expect-heading">
           <h2 id="patients-expect-heading" className="patients__section-title">What to Expect After Your Doctor Refers You</h2>
-          <ol className="patients__steps">
-            <li className="patients__step">
-              <span className="patients__step-num">Step 1</span>
-              <span className="patients__step-text">Your doctor sends a referral.</span>
+          <ol className="patients__timeline" aria-label="Referral process steps">
+            <li className="patients__timeline-item">
+              <span className="patients__timeline-marker" aria-hidden>1</span>
+              <div className="patients__timeline-content">
+                <span className="patients__timeline-label">Step 1</span>
+                <p className="patients__timeline-text">Your doctor sends a referral.</p>
+              </div>
             </li>
-            <li className="patients__step">
-              <span className="patients__step-num">Step 2</span>
-              <span className="patients__step-text">We contact you within 24–48 hours.</span>
+            <li className="patients__timeline-item">
+              <span className="patients__timeline-marker" aria-hidden>2</span>
+              <div className="patients__timeline-content">
+                <span className="patients__timeline-label">Step 2</span>
+                <p className="patients__timeline-text">We contact you within 24–48 hours.</p>
+              </div>
             </li>
-            <li className="patients__step">
-              <span className="patients__step-num">Step 3</span>
-              <span className="patients__step-text">Equipment delivery/setup and a quick training.</span>
+            <li className="patients__timeline-item">
+              <span className="patients__timeline-marker" aria-hidden>3</span>
+              <div className="patients__timeline-content">
+                <span className="patients__timeline-label">Step 3</span>
+                <p className="patients__timeline-text">Equipment delivery/setup and a quick training.</p>
+              </div>
             </li>
-            <li className="patients__step">
-              <span className="patients__step-num">Step 4</span>
-              <span className="patients__step-text">Monitoring begins with ongoing support.</span>
+            <li className="patients__timeline-item">
+              <span className="patients__timeline-marker" aria-hidden>4</span>
+              <div className="patients__timeline-content">
+                <span className="patients__timeline-label">Step 4</span>
+                <p className="patients__timeline-text">Monitoring begins with ongoing support.</p>
+              </div>
             </li>
           </ol>
           <div className="patients__expect-wave-wrap">
@@ -168,7 +191,8 @@ export default function ForPatientsPage() {
               </svg>
             </div>
           </div>
-        </section>
+          </section>
+        </div>
 
         {/* 7) Final CTA */}
         <section className="patients__section patients__section--cta" aria-labelledby="patients-cta-heading">
