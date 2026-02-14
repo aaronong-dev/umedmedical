@@ -9,7 +9,6 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ForPatientsPage from './pages/ForPatientsPage'
 import ForPhysiciansPage from './pages/ForPhysiciansPage'
-import ClinicalModelPage from './pages/ClinicalModelPage'
 import ResourcesPage from './pages/ResourcesPage'
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/for-patients" element={<ForPatientsPage />} />
             <Route path="/for-physicians" element={<ForPhysiciansPage />} />
-            <Route path="/clinical-model" element={<ClinicalModelPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
           </Routes>
         </div>

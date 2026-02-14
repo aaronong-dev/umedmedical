@@ -24,7 +24,6 @@ export default function Footer() {
               <a href="/about">About</a>
               <a href="/for-patients">For Patients</a>
               <a href="/for-physicians">For Physicians</a>
-              <a href="/clinical-model">Clinical Model</a>
               <a href="/resources">Resources</a>
             </nav>
           </div>

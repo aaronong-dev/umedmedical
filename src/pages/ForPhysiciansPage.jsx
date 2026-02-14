@@ -64,7 +64,6 @@ export default function ForPhysiciansPage() {
               <p className="physicians__section-copy">
                 Many RPM programs rely on automated alerts or call centers. Our patients are monitored by licensed clinical staff who evaluate trends (not isolated readings), contact patients when changes occur, reinforce care plans, and escalate clinically significant findings to physicians via structured protocols.
               </p>
-              <Link to="/clinical-model" className="physicians__nursing-button">Learn More</Link>
             </section>
           </div>
         </div>
