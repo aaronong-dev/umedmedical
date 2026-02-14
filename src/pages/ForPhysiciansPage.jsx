@@ -168,6 +168,13 @@ export default function ForPhysiciansPage() {
               <p className="physicians__step-desc">Skilled nursing oversight begins with ongoing monitoring, trend review, and escalation per protocol.</p>
             </li>
           </ol>
+          <div className="physicians__steps-wave-wrap">
+            <div className="physicians__steps-wave" aria-hidden="true">
+              <svg viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 24c120 0 240-24 360-24s240 24 360 24 240-24 360-24 240 24 360 24v24H0V24z" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
         </section>
 
         {/* Final CTA */}

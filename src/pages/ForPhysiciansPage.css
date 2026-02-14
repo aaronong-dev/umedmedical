@@ -349,7 +349,33 @@
 /* Steps (referral process) - card design with icons and arrows */
 .physicians__section--steps {
   margin-top: 5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
+  position: relative;
+}
+
+.physicians__steps-wave-wrap {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(-1);
+  width: 100vw;
+  height: 28px;
+  margin-bottom: -28px;
+  overflow: hidden;
+}
+
+.physicians__steps-wave {
+  width: 100%;
+  height: 100%;
+  color: #f7fafc;
+  line-height: 0;
+}
+
+.physicians__steps-wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .physicians__section--steps .physicians__section-title {

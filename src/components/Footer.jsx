@@ -11,18 +11,52 @@ export default function Footer() {
         </svg>
       </div>
       <div className="footer__content">
-        <a href="/" className="footer__brand" aria-label="UMed Medical home">
-          <img src="/logo.png" alt="" className="footer__logo" />
-        </a>
-        <nav className="footer__links">
-          <a href="#hipaa-notice">HIPAA Notice</a>
-          <a href="#privacy-policy">Privacy Policy</a>
-          <a href="#terms-of-use">Terms of Use</a>
-          <a href="#medical-disclaimer">Medical Disclaimer</a>
-        </nav>
-        <p className="footer__copyright">
-          © {currentYear} UMED Medical. All rights reserved.
-        </p>
+        <div className="footer__grid">
+          <div className="footer__brand-col">
+            <a href="/" className="footer__brand" aria-label="UMed Medical home">
+              <img src="/logo.png" alt="" className="footer__logo" />
+            </a>
+          </div>
+          <div className="footer__col">
+            <h3 className="footer__col-title">Quick Links</h3>
+            <nav className="footer__nav">
+              <a href="/">Home</a>
+              <a href="/about">About</a>
+              <a href="/for-patients">For Patients</a>
+              <a href="/for-physicians">For Physicians</a>
+              <a href="/clinical-model">Clinical Model</a>
+              <a href="/resources">Resources</a>
+            </nav>
+          </div>
+          <div className="footer__col">
+            <h3 className="footer__col-title">Contact</h3>
+            <address className="footer__contact">
+              <p>
+                <a href="tel:+15551234567">(555) 123-4567</a>
+              </p>
+              <p>
+                <a href="tel:+15559876543">(555) 987-6543</a>
+              </p>
+              <p>
+                <a href="mailto:info@umedmedical.com">info@umedmedical.com</a>
+              </p>
+            </address>
+          </div>
+          <div className="footer__col">
+            <h3 className="footer__col-title">Legal</h3>
+            <nav className="footer__nav">
+              <a href="#hipaa-notice">HIPAA Notice</a>
+              <a href="#privacy-policy">Privacy Policy</a>
+              <a href="#terms-of-use">Terms of Use</a>
+              <a href="#medical-disclaimer">Medical Disclaimer</a>
+            </nav>
+          </div>
+        </div>
+        <div className="footer__bottom">
+          <p className="footer__copyright">
+            © {currentYear} UMED Medical. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   )

@@ -141,7 +141,7 @@ export default function ForPatientsPage() {
         </section>
 
         {/* 6) What to expect after your doctor refers you */}
-        <section className="patients__section" aria-labelledby="patients-expect-heading">
+        <section className="patients__section patients__section--expect" aria-labelledby="patients-expect-heading">
           <h2 id="patients-expect-heading" className="patients__section-title">What to Expect After Your Doctor Refers You</h2>
           <ol className="patients__steps">
             <li className="patients__step">
@@ -161,6 +161,13 @@ export default function ForPatientsPage() {
               <span className="patients__step-text">Monitoring begins with ongoing support.</span>
             </li>
           </ol>
+          <div className="patients__expect-wave-wrap">
+            <div className="patients__expect-wave" aria-hidden="true">
+              <svg viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 24c120 0 240-24 360-24s240 24 360 24 240-24 360-24 240 24 360 24v24H0V24z" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
         </section>
 
         {/* 7) Final CTA */}
