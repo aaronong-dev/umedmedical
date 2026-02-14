@@ -112,6 +112,63 @@
   padding: 0 0.5rem;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===== Filter chips ===== */
+.resources__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resources__chip {
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-primary, #1a365d);
+  background: #fff;
+  border: 1px solid rgba(26, 54, 93, 0.2);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.resources__chip:hover {
+  background: #e8eef4;
+  border-color: rgba(26, 54, 93, 0.3);
+}
+
+.resources__chip--active {
+  background: var(--text-primary, #1a365d);
+  border-color: var(--text-primary, #1a365d);
+  color: #fff;
+}
+
+.resources__chip--active:hover {
+  background: #0f2744;
+  border-color: #0f2744;
+  color: #fff;
+}
+
+.resources__card-source {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary, #1a365d);
+  opacity: 0.8;
+  margin: 0 0 0.5rem;
+}
+
 .resources__section-title {
   font-size: 1.75rem;
   font-weight: 600;
@@ -424,6 +481,16 @@
 
   .resources__section {
     margin-top: 2.5rem;
+  }
+
+  .resources__filters {
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .resources__chip {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.875rem;
   }
 
   .resources__section-title {
