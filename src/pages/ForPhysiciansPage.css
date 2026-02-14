@@ -101,8 +101,9 @@
 /* Intro */
 .physicians__intro {
   font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1.7;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0;
   max-width: 72ch;
 }
@@ -156,8 +157,9 @@
 
 .physicians__section-copy {
   font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1.7;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0;
   max-width: 72ch;
 }
@@ -453,8 +455,9 @@
 
 .physicians__step-desc {
   font-size: 0.9375rem;
+  font-weight: 200;
   line-height: 1.5;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0;
 }
 

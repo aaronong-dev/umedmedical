@@ -94,8 +94,9 @@
 
 .resources__intro {
   font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1.7;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0;
   max-width: 72ch;
 }
@@ -122,8 +123,9 @@
 
 .resources__section-copy {
   font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1.7;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0 0 1rem;
   max-width: 72ch;
 }
@@ -156,8 +158,9 @@
 
 .resources__card-summary {
   font-size: 0.9375rem;
+  font-weight: 200;
   line-height: 1.6;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0 0 1rem;
   flex: 1;
 }
@@ -203,8 +206,9 @@
 
 .resources__pdf-desc {
   font-size: 0.875rem;
+  font-weight: 200;
   line-height: 1.55;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0 0 1rem;
   flex: 1;
 }
@@ -237,8 +241,9 @@
   margin: 0 0 1.25rem;
   padding: 0 0 0 1.25rem;
   font-size: 1.0625rem;
+  font-weight: 200;
   line-height: 1.65;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
 }
 
 .resources__referral-list li {
@@ -299,8 +304,9 @@
 
 .resources__faq-a {
   font-size: 1rem;
+  font-weight: 200;
   line-height: 1.6;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0;
 }
 
@@ -321,7 +327,8 @@
   border-radius: 6px;
   padding: 1rem 1.25rem;
   font-size: 0.875rem;
-  color: var(--color-text-muted, #5a6c72);
+  font-weight: 200;
+  color: var(--text-primary, #1a365d);
   font-style: italic;
 }
 
@@ -342,8 +349,9 @@
 
 .resources__cta-copy {
   font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1.65;
-  color: var(--color-text-muted, #5a6c72);
+  color: var(--text-primary, #1a365d);
   margin: 0 auto 1.5rem;
   max-width: 42ch;
 }

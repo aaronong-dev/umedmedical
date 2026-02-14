@@ -79,14 +79,16 @@
 
 .home__subtitle {
   font-size: 1.25rem;
-  color: var(--color-text-muted, #5a6c72);
+  font-weight: 200;
+  color: var(--text-primary, #1a365d);
   margin: 0 0 1rem;
 }
 
 .home__intro {
   font-size: 1.05rem;
+  font-weight: 200;
   line-height: 1.65;
-  color: var(--color-text, #213547);
+  color: var(--text-primary, #1a365d);
   max-width: 560px;
   margin: 0 auto;
 }
@@ -392,15 +394,17 @@
   margin: 0;
   padding: 0.5rem 1.1rem 0.85rem;
   font-size: 0.88rem;
+  font-weight: 200;
   line-height: 1.5;
-  color: var(--color-text, #213547);
+  color: var(--text-primary, #1a365d);
   border-top: 1px solid rgba(13, 59, 74, 0.06);
 }
 
 .home__faq-contact {
   margin: 1.25rem 0 0;
   font-size: 0.95rem;
-  color: var(--color-text, #213547);
+  font-weight: 200;
+  color: var(--text-primary, #1a365d);
   text-align: center;
 }
 
@@ -620,8 +624,9 @@
 
 .home__card p {
   font-size: 0.95rem;
+  font-weight: 200;
   line-height: 1.5;
-  color: var(--color-text, #213547);
+  color: var(--text-primary, #1a365d);
   margin: 0;
 }
 
@@ -630,8 +635,9 @@
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
+  font-weight: 200;
   line-height: 1.65;
-  color: var(--color-text, #213547);
+  color: var(--text-primary, #1a365d);
 }
 
 .home__contact-text strong {
