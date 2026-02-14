@@ -21,7 +21,7 @@ export default function ForPatientsPage() {
             <h1 id="patients-title" className="patients__title">Care That Follows You Home</h1>
 
             <p className="patients__intro">
-              UMED Medical’s telemonitoring program keeps you connected to your care team between office visits. We help you manage chronic conditions with regular check-ins, remote monitoring, and timely support — so you can stay on track with your health goals and get help when you need it.
+              UMED Medical's telemonitoring program keeps you connected to your care team between office visits. We help you manage chronic conditions with regular check-ins, remote monitoring, and timely support — so you can stay on track with your health goals and get help when you need it.
             </p>
           </div>
         </div>
@@ -40,19 +40,44 @@ export default function ForPatientsPage() {
             </div>
             <div className="patients__how-content">
               <h2 id="patients-how-heading" className="patients__section-title">How Telemonitoring Works</h2>
-          <p className="patients__section-lead">It’s simple. Here’s what happens:</p>
+          <p className="patients__section-lead">It's simple. Here's what happens:</p>
           <ul className="patients__list">
             <li>You receive easy-to-use monitoring equipment (for example, a blood pressure device).</li>
             <li>You take readings at home.</li>
             <li>Our clinical team reviews them securely.</li>
             <li>If something changes, we contact you and coordinate with your doctor when needed.</li>
           </ul>
-          <p className="patients__section-text">It’s not complicated — and support is always available when you need it.</p>
+          <p className="patients__section-text">It's not complicated — and support is always available when you need it.</p>
             </div>
           </div>
         </section>
 
-        {/* 2) Who this program is for - same cards as Ideal Referral Profiles (For Physicians) */}
+        {/* 2) What support you'll receive */}
+        <section className="patients__section patients__section--no-divider" aria-labelledby="patients-support-heading">
+          <div className="patients__support-wrap">
+            <div className="patients__support-box">
+              <h2 id="patients-support-heading" className="patients__section-title">What Support You'll Receive</h2>
+              <p className="patients__section-lead">You're not just sending numbers.</p>
+              <p className="patients__section-text">Our licensed nursing team provides real support:</p>
+              <ul className="patients__list">
+                <li>Reviews your readings regularly</li>
+                <li>Calls when something looks concerning</li>
+                <li>Helps you understand your care plan</li>
+                <li>Encourages medication and care plan follow-through</li>
+                <li>Communicates with your physician when needed</li>
+              </ul>
+            </div>
+            <div className="patients__support-image-wrap">
+              <img
+                src="/support-receive.jpg"
+                alt="Healthcare professional on a support call"
+                className="patients__support-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* 3) Who this program is for - same cards as Ideal Referral Profiles (For Physicians) */}
         <section className="patients__section patients__section--who-cards" aria-labelledby="patients-who-heading">
           <h2 id="patients-who-heading" className="patients__section-title">Who This Program Is For</h2>
           <p className="patients__section-text">This may be right for you if:</p>
@@ -108,35 +133,10 @@ export default function ForPatientsPage() {
           </div>
         </section>
 
-        {/* 3) What support you'll receive */}
-        <section className="patients__section" aria-labelledby="patients-support-heading">
-          <div className="patients__support-wrap">
-            <div className="patients__support-box">
-              <h2 id="patients-support-heading" className="patients__section-title">What Support You’ll Receive</h2>
-              <p className="patients__section-lead">You’re not just sending numbers.</p>
-              <p className="patients__section-text">Our licensed nursing team provides real support:</p>
-              <ul className="patients__list">
-                <li>Reviews your readings regularly</li>
-                <li>Calls when something looks concerning</li>
-                <li>Helps you understand your care plan</li>
-                <li>Encourages medication and care plan follow-through</li>
-                <li>Communicates with your physician when needed</li>
-              </ul>
-            </div>
-            <div className="patients__support-image-wrap">
-              <img
-                src="/support-receive.jpg"
-                alt="Healthcare professional on a support call"
-                className="patients__support-image"
-              />
-            </div>
-          </div>
-        </section>
-
         {/* 4) Bilingual care */}
         <section className="patients__section patients__section--highlight" aria-labelledby="patients-bilingual-heading">
           <h2 id="patients-bilingual-heading" className="patients__section-title">Bilingual Care</h2>
-          <p className="patients__section-text">We offer support in English and Spanish. Our team can help you understand instructions, medications, and care plans in the language you’re most comfortable with. You’ll work with a real clinical team — not a call center.</p>
+          <p className="patients__section-text">We offer support in English and Spanish. Our team can help you understand instructions, medications, and care plans in the language you're most comfortable with. You'll work with a real clinical team — not a call center.</p>
         </section>
 
         <div className="patients__white-wrap">
@@ -196,8 +196,8 @@ export default function ForPatientsPage() {
 
         {/* 7) Final CTA */}
         <section className="patients__section patients__section--cta" aria-labelledby="patients-cta-heading">
-          <h2 id="patients-cta-heading" className="patients__section-title">You’re Not Doing This Alone</h2>
-          <p className="patients__cta-copy">We’re here to support you between visits and keep you connected to your care.</p>
+          <h2 id="patients-cta-heading" className="patients__section-title">You're Not Doing This Alone</h2>
+          <p className="patients__cta-copy">We're here to support you between visits and keep you connected to your care.</p>
           <Link to="/resources" className="patients__cta-button">Ask Your Doctor About Telemonitoring</Link>
         </section>
       </div>

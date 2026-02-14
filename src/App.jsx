@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage'
 import ForPatientsPage from './pages/ForPatientsPage'
 import ForPhysiciansPage from './pages/ForPhysiciansPage'
 import ResourcesPage from './pages/ResourcesPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/for-patients" element={<ForPatientsPage />} />
             <Route path="/for-physicians" element={<ForPhysiciansPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
         <Footer />

@@ -81,15 +81,8 @@ export default function ResourcesPage() {
             <h1 id="resources-title" className="resources__title">Resources</h1>
 
             <p className="resources__intro">
-              Find information for patients and physicians, learn about our clinical model, and get in touch. All in one place.
+              Curated articles and guides on telehealth and remote monitoring—whether you're a patient learning the basics or a provider looking for evidence. Browse by topic or get in touch with questions.
             </p>
-          </div>
-          <div className="resources__header-image-wrap">
-            <img
-              src="https://placehold.co/480x320/e8eef4/9ca3af?text=Resources"
-              alt=""
-              className="resources__header-image"
-            />
           </div>
         </div>
       </section>

@@ -12,6 +12,7 @@ export default function Navbar() {
         <Link to="/for-physicians" className="navbar__link">For Physicians</Link>
         <Link to="/for-patients" className="navbar__link">For Patients</Link>
         <Link to="/resources" className="navbar__link">Resources</Link>
+        <Link to="/contact" className="navbar__link">Contact</Link>
       </nav>
       <a href="#refer" className="navbar__cta">Refer a patient</a>
     </header>

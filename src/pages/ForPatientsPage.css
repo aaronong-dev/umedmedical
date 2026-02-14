@@ -32,6 +32,10 @@
   border-bottom: none;
 }
 
+.patients__section--no-divider {
+  border-bottom: none;
+}
+
 .patients__section-title {
   font-size: 1.5rem;
   font-weight: 600;
