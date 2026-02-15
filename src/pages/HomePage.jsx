@@ -18,14 +18,14 @@ export default function HomePage() {
         <div className="home__cards home__cards--audience">
           <Link to="/for-physicians" className="home__card home__card--audience">
             <div className="home__card-image-wrap">
-              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="" className="home__card-image" />
+              <img src="/for-physicians.jpg" alt="" className="home__card-image" />
             </div>
             <h3 className="home__card-title">For physicians</h3>
             <span className="home__card-cta">Explore opportunities <span className="home__card-chevron" aria-hidden>→</span></span>
           </Link>
           <Link to="/for-patients" className="home__card home__card--audience">
             <div className="home__card-image-wrap">
-              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="" className="home__card-image" />
+              <img src="/for-patients.jpg" alt="" className="home__card-image" />
             </div>
             <h3 className="home__card-title">For patients</h3>
             <span className="home__card-cta">See our care in action <span className="home__card-chevron" aria-hidden>→</span></span>
@@ -53,6 +53,11 @@ export default function HomePage() {
 
       <section className="home__section home__section--how-it-works" aria-label="How it works">
         <div className="home__how-content">
+          <div className="home__how-wave home__how-wave--top" aria-hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" className="home__how-wave-svg">
+              <path d="M0,30 Q360,0 720,30 T1440,30 L1440,60 L0,60 Z" fill="currentColor" />
+            </svg>
+          </div>
           <img
             src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1600&q=80"
             alt=""
@@ -62,7 +67,7 @@ export default function HomePage() {
           <header className="home__how-header">
             <h2 className="home__how-title">How It Works</h2>
             <p className="home__how-description">
-              
+              From setup to ongoing support, here’s how our telemonitoring program works for you.
             </p>
           </header>
           <div className="home__how-cards">
@@ -106,6 +111,11 @@ export default function HomePage() {
                 <p className="home__how-card-text">Our healthcare professionals regularly review your health data, providing feedback, adjusting care plans, and coordinating with your primary care providers as needed.</p>
               </div>
             </div>
+          </div>
+          <div className="home__how-wave home__how-wave--bottom" aria-hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" className="home__how-wave-svg">
+              <path d="M0,30 Q360,60 720,30 T1440,30 L1440,0 L0,0 Z" fill="currentColor" />
+            </svg>
           </div>
         </div>
       </section>

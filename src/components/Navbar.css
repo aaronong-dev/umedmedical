@@ -92,14 +92,140 @@
   font-weight: 600;
 }
 
+/* Mobile: hamburger (hidden on desktop) */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: rgb(23, 49, 67);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.navbar__toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* Mobile: hamburger → X when open */
+.navbar__toggle .navbar__toggle-close {
+  display: none;
+}
+
+.navbar__toggle--open .navbar__toggle-bar {
+  display: none;
+}
+
+.navbar__toggle--open .navbar__toggle-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile dropdown: panel under navbar */
+.navbar__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 0.25s ease, visibility 0.25s;
+}
+
+.navbar__dropdown--open {
+  max-height: min(80vh, 400px);
+  overflow-y: auto;
+  visibility: visible;
+}
+
+.navbar__dropdown-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.navbar__dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #111;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'HCA-Mark-Medium', sans-serif;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar__dropdown-link:active {
+  background: #f9fafb;
+}
+
+.navbar__dropdown-chevron {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  color: #374151;
+}
+
+.navbar__dropdown-link--cta {
+  font-weight: 600;
+  color: var(--text-primary, #1a365d);
+}
+
+/* Desktop: hide dropdown and hamburger; show normal nav */
+@media (min-width: 641px) {
+  .navbar__dropdown {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    position: relative;
   }
 
-  .navbar__nav {
-    gap: 1.25rem;
+  .navbar__brand {
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar__logo {
+    padding-left: 0;
+    padding-right: 0;
+    height: 2.25rem;
+  }
+
+  .navbar__nav,
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    order: 1;
+    margin-left: 0;
   }
 }
