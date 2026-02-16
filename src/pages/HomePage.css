@@ -1,6 +1,6 @@
 .home {
   flex: 1;
-  padding: 0 0 3rem;
+  padding: 0 0 rem;
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
@@ -538,6 +538,11 @@
 }
 
 @media (max-width: 640px) {
+  .home__section--audience {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .home__cards--audience {
     grid-template-columns: 1fr;
   }
@@ -658,7 +663,7 @@
 
 @media (max-width: 640px) {
   .home {
-    padding: 0 1rem 2rem;
+    padding: 0;
   }
 
   .hero-overlay {
