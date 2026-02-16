@@ -536,15 +536,20 @@
 
   .patients__support-wrap {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .patients__support-image-wrap {
     max-width: 320px;
     margin: 0 auto;
+    transform: none;
   }
 
   .patients__support-box {
     padding: 1.5rem 1.25rem;
+    transform: none;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .patients__breadcrumb {

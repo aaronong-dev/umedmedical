@@ -122,6 +122,11 @@
     gap: 1.5rem;
   }
 
+  .physicians__header-image-wrap {
+    margin-top: -8rem;
+    padding-bottom: 5rem;
+  }
+
   .physicians__header-image {
     max-width: none;
   }
@@ -269,15 +274,24 @@
 @media (max-width: 768px) {
   .physicians__nursing-wrap {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 0;
+    margin: 2rem 0;
+    align-items: stretch;
   }
 
   .physicians__nursing-image-wrap {
     max-width: 100%;
+    margin-left: 0;
   }
 
   .physicians__nursing-image {
+    width: 100%;
     max-width: 100%;
+  }
+
+  .physicians__nursing-container {
+    transform: none;
+    padding: 1.5rem 1rem;
   }
 
   .physicians__section--nursing .physicians__section-copy {
@@ -358,7 +372,7 @@
 
 .physicians__steps-wave-wrap {
   position: absolute;
-  bottom: -50px;
+  bottom: -45px;
   left: 50%;
   transform: translateX(-50%) scaleY(-1);
   width: 100vw;
