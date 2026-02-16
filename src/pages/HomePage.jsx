@@ -169,7 +169,7 @@ export default function HomePage() {
             </div>
           </dl>
             <p className="home__faq-contact">
-              Have a different question? <a href="/contact" className="home__faq-contact-link">Contact us</a>
+              Have a different question? <Link to="/contact" className="home__faq-contact-link">Contact us</Link>
             </p>
           </div>
         </div>
