@@ -502,6 +502,12 @@
   color: #fff;
 }
 
+@media (min-width: 641px) {
+  .physicians__section--cta {
+    margin-bottom: 5rem;
+  }
+}
+
 .physicians__section--cta .physicians__section-title {
   color: #fff;
   margin-bottom: 0.75rem;
