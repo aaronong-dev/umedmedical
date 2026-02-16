@@ -6,8 +6,9 @@
   position: relative;
 }
 
-/* On For Patients page: overlay the footer on top of the CTA section image */
-.app__content:has(.patients) + .footer {
+/* On For Patients and For Physicians pages: overlay the footer on top of the CTA section image */
+.app__content:has(.patients) + .footer,
+.app__content:has(.physicians) + .footer {
   margin-top: -5rem;
   z-index: 1;
 }

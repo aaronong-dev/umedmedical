@@ -59,7 +59,7 @@ export default function HomePage() {
             </svg>
           </div>
           <img
-            src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1600&q=80"
+            src="/how-it-works/background.jpg"
             alt=""
             className="home__how-image"
           />
@@ -73,7 +73,7 @@ export default function HomePage() {
           <div className="home__how-cards">
             <div className="home__how-card-wrapper">
               <div className="home__how-card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&h=120&q=80" alt="" className="home__how-card-image" />
+                <img src="/how-it-works/step-1.jpg" alt="" className="home__how-card-image" />
               </div>
               <div className="home__how-card">
                 <span className="home__how-card-step">Step 1</span>
@@ -83,7 +83,7 @@ export default function HomePage() {
             </div>
             <div className="home__how-card-wrapper">
               <div className="home__how-card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=120&q=80" alt="" className="home__how-card-image" />
+                <img src="/how-it-works/step-2.jpg" alt="" className="home__how-card-image" />
               </div>
               <div className="home__how-card">
                 <span className="home__how-card-step">Step 2</span>
@@ -93,7 +93,7 @@ export default function HomePage() {
             </div>
             <div className="home__how-card-wrapper">
               <div className="home__how-card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&h=120&q=80" alt="" className="home__how-card-image" />
+                <img src="/how-it-works/step-3.jpg" alt="" className="home__how-card-image" />
               </div>
               <div className="home__how-card">
                 <span className="home__how-card-step">Step 3</span>
@@ -103,7 +103,7 @@ export default function HomePage() {
             </div>
             <div className="home__how-card-wrapper">
               <div className="home__how-card-image-wrap">
-                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&h=120&q=80" alt="" className="home__how-card-image" />
+                <img src="/how-it-works/step-4.jpg" alt="" className="home__how-card-image" />
               </div>
               <div className="home__how-card">
                 <span className="home__how-card-step">Step 4</span>
@@ -122,10 +122,6 @@ export default function HomePage() {
 
       <section className="home__section home__section--faq" aria-label="Frequently asked questions">
         <div className="home__faq-layout">
-          <div className="home__faq-image-wrap">
-            <img src="/FAQ-Section.png" alt="" className="home__faq-image" />
-            <div className="home__faq-image-gradient" aria-hidden />
-          </div>
           <div className="home__faq-inner">
             <div className="home__faq-title-wrap">
               <h2 className="home__faq-title">Frequently Asked Questions</h2>

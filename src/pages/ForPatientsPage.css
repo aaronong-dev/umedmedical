@@ -296,6 +296,7 @@
   position: relative;
   border-bottom: none;
   text-align: center;
+  overflow: visible;
 }
 
 .patients__section--expect .patients__section-title {
@@ -305,13 +306,14 @@
 
 .patients__expect-wave-wrap {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%) scaleY(-1);
   width: 100vw;
   height: 28px;
   margin-bottom: -28px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .patients__expect-wave {
@@ -354,8 +356,8 @@
 
 .patients__cta-button {
   display: inline-block;
-  padding: 0.75rem 1.75rem;
-  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #fff;
   background-color: var(--text-primary, #1a365d);
@@ -635,13 +637,35 @@
   }
 
   .patients__section--cta {
-    margin-top: 3rem;
-    padding: 2.5rem 1rem;
+    margin-top: 0;
+    padding: 2.5rem 1rem 6rem;
+    box-sizing: border-box;
+  }
+
+  .patients__section--cta .patients__section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .patients__cta-copy {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   .patients__cta-button {
-    width: 100%;
+    width: auto;
+    max-width: 260px;
     text-align: center;
     box-sizing: border-box;
+  }
+
+  /* Wave divider: ensure it spans edge-to-edge and renders cleanly on small screens */
+  .patients__expect-wave-wrap {
+    height: 24px;
+    margin-bottom: -24px;
+  }
+
+  .patients__expect-wave svg {
+    min-width: 100%;
   }
 }

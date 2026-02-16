@@ -596,7 +596,15 @@
   }
 
   .physicians__section--cta {
-    margin-top: 3rem;
-    padding: 2rem 1rem;
+    margin-top: 0;
+    padding: 2rem 1rem 6rem;
+    box-sizing: border-box;
+  }
+
+  /* Wave: ensure it meets the CTA with no gap */
+  .physicians__steps-wave-wrap {
+    bottom: 0;
+    height: 24px;
+    margin-bottom: -24px;
   }
 }
