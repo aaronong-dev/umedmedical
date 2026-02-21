@@ -39,7 +39,7 @@
 .footer__grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 2.5rem 2rem;
+  gap: 2.5rem 1.25rem;
   margin-bottom: 2.5rem;
 }
 
@@ -64,8 +64,9 @@
 
 .footer__logo {
   display: block;
-  height: 4rem;
+  height: 5.5rem;
   width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer__col-title {

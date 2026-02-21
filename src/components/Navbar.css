@@ -23,7 +23,7 @@
 
 .navbar__logo {
   display: block;
-  height: 2.5rem;
+  height: 3rem;
   width: auto;
   padding-left: 7rem;
   padding-right: 1rem;
@@ -215,7 +215,7 @@
   .navbar__logo {
     padding-left: 0;
     padding-right: 0;
-    height: 2.25rem;
+    height: 2.75rem;
   }
 
   .navbar__nav,

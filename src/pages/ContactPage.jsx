@@ -31,7 +31,7 @@ export default function ContactPage() {
                 <svg className="contact__breadcrumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
-                <span>UMED Medical</span>
+                <span>AllMed Home Care</span>
               </Link>
               <span className="contact__breadcrumb-sep" aria-hidden>/</span>
               <span className="contact__breadcrumb-current">Contact</span>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             <div className="contact__details-inner">
               <p className="contact__details-item">
                 <span className="contact__details-label">Email</span>
-                <a href="mailto:info@umedmedical.com" className="contact__details-link">info@umedmedical.com</a>
+                <a href="mailto:info@allmedhomecare.com" className="contact__details-link">info@allmedhomecare.com</a>
               </p>
               <p className="contact__details-item">
                 <span className="contact__details-label">Phone</span>

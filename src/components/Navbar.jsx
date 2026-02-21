@@ -15,8 +15,8 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <Link to="/" className="navbar__brand" aria-label="UMed Medical home">
-        <img src="/logo.png" alt="" className="navbar__logo" />
+      <Link to="/" className="navbar__brand" aria-label="AllMed Home Care home">
+        <img src="/allmed-logo.png" alt="" className="navbar__logo" />
       </Link>
 
       <nav className="navbar__nav">

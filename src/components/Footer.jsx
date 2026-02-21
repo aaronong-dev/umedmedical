@@ -13,8 +13,8 @@ export default function Footer() {
       <div className="footer__content">
         <div className="footer__grid">
           <div className="footer__brand-col">
-            <a href="/" className="footer__brand" aria-label="UMed Medical home">
-              <img src="/logo.png" alt="" className="footer__logo" />
+            <a href="/" className="footer__brand" aria-label="AllMed Home Care home">
+              <img src="/allmed-logo.png" alt="" className="footer__logo" />
             </a>
           </div>
           <div className="footer__col">
@@ -37,7 +37,7 @@ export default function Footer() {
                 <a href="tel:+15559876543">(555) 987-6543</a>
               </p>
               <p>
-                <a href="mailto:info@umedmedical.com">info@umedmedical.com</a>
+                <a href="mailto:info@allmedhomecare.com">info@allmedhomecare.com</a>
               </p>
             </address>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © {currentYear} UMED Medical. All rights reserved.
+            © {currentYear} AllMed Home Care. All rights reserved.
           </p>
         </div>
       </div>

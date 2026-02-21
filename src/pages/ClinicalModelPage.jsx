@@ -12,7 +12,7 @@ export default function ClinicalModelPage() {
                 <svg className="clinical-model__breadcrumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
-                <span>UMED Medical</span>
+                <span>AllMed Home Care</span>
               </Link>
               <span className="clinical-model__breadcrumb-sep" aria-hidden>/</span>
               <span className="clinical-model__breadcrumb-current">Clinical Model</span>
@@ -21,7 +21,7 @@ export default function ClinicalModelPage() {
             <h1 id="clinical-model-title" className="clinical-model__title">Our Clinical Model</h1>
 
             <p className="clinical-model__intro">
-              UMED Medical’s telemonitoring program is built on structured clinical oversight — not just device alerts. Licensed nursing professionals evaluate trends, engage patients, and escalate to physicians when it matters, so care stays coordinated and patients stay stable at home.
+              AllMed Home Care’s telemonitoring program is built on structured clinical oversight — not just device alerts. Licensed nursing professionals evaluate trends, engage patients, and escalate to physicians when it matters, so care stays coordinated and patients stay stable at home.
             </p>
           </div>
           <div className="clinical-model__header-image-wrap">

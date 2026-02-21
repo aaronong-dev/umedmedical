@@ -36,7 +36,7 @@ export default function HomePage() {
       <section className="home__section home__section--quote" aria-label="Quote">
         <blockquote className="home__quote">
           <p className="home__quote-text">
-            <span className="neu-text--heavy neu-text--hca-healthcare-orange" aria-hidden>"</span>Telemonitoring services with UMED is a very important part of our practice.
+            <span className="neu-text--heavy neu-text--hca-healthcare-orange" aria-hidden>"</span>Telemonitoring services with AllMed is a very important part of our practice.
             Patient feedback is always positive, reports are always on time and the
             nurses are always available for our staff. Continuing to work with them is a long-term plan.<span className="neu-text--heavy neu-text--hca-healthcare-orange" aria-hidden>"</span>
           </p>

@@ -12,7 +12,7 @@ export default function ForPhysiciansPage() {
                 <svg className="physicians__breadcrumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
-                <span>UMED Medical</span>
+                <span>AllMed Home Care</span>
               </Link>
               <span className="physicians__breadcrumb-sep" aria-hidden>/</span>
               <span className="physicians__breadcrumb-current">For Physicians</span>
@@ -21,7 +21,7 @@ export default function ForPhysiciansPage() {
             <h1 id="physicians-title" className="physicians__title">Partnering with Physicians</h1>
 
             <p className="physicians__intro">
-              Partner with UMED Medical to extend your care beyond the clinic. Our telemonitoring program gives you visibility into high-risk patients while our nursing team handles day-to-day monitoring, patient outreach, and timely escalation — so you can focus on clinical decisions when they matter most.
+              Partner with AllMed Home Care to extend your care beyond the clinic. Our telemonitoring program gives you visibility into high-risk patients while our nursing team handles day-to-day monitoring, patient outreach, and timely escalation — so you can focus on clinical decisions when they matter most.
             </p>
           </div>
           <div className="physicians__header-image-wrap">
@@ -39,7 +39,7 @@ export default function ForPhysiciansPage() {
         <section className="physicians__section" aria-labelledby="physicians-gap-heading">
           <h2 id="physicians-gap-heading" className="physicians__section-title">The Gap Between Visits</h2>
           <p className="physicians__section-copy">
-            Hospitalizations and acute events often occur between appointments when early signs of deterioration go unnoticed. Chronic disease patients require consistent oversight, but most practices lack the staffing/infrastructure for daily monitoring without adding administrative burden. UMED Medical bridges that gap.
+            Hospitalizations and acute events often occur between appointments when early signs of deterioration go unnoticed. Chronic disease patients require consistent oversight, but most practices lack the staffing/infrastructure for daily monitoring without adding administrative burden. AllMed Home Care bridges that gap.
           </p>
         </section>
 

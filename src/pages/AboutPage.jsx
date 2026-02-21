@@ -12,13 +12,13 @@ export default function AboutPage() {
                 <svg className="about__breadcrumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
-                <span>UMED Medical</span>
+                <span>AllMed Home Care</span>
               </Link>
               <span className="about__breadcrumb-sep" aria-hidden>/</span>
-              <span className="about__breadcrumb-current">About UMED Medical</span>
+              <span className="about__breadcrumb-current">About AllMed Home Care</span>
             </nav>
 
-            <h1 id="about-title" className="about__title">About UMED Medical</h1>
+            <h1 id="about-title" className="about__title">About AllMed Home Care</h1>
 
             <p className="about__intro">
             Our telemonitoring program was built with one clear purpose — to keep high-risk patients stable at home through continuous, clinically guided monitoring. 

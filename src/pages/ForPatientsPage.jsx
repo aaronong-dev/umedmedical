@@ -12,7 +12,7 @@ export default function ForPatientsPage() {
                 <svg className="patients__breadcrumb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
                 </svg>
-                <span>UMED Medical</span>
+                <span>AllMed Home Care</span>
               </Link>
               <span className="patients__breadcrumb-sep" aria-hidden>/</span>
               <span className="patients__breadcrumb-current">For Patients</span>
@@ -21,7 +21,7 @@ export default function ForPatientsPage() {
             <h1 id="patients-title" className="patients__title">Care That Follows You Home</h1>
 
             <p className="patients__intro">
-              UMED Medical's telemonitoring program keeps you connected to your care team between office visits. We help you manage chronic conditions with regular check-ins, remote monitoring, and timely support — so you can stay on track with your health goals and get help when you need it.
+              AllMed Home Care's telemonitoring program keeps you connected to your care team between office visits. We help you manage chronic conditions with regular check-ins, remote monitoring, and timely support — so you can stay on track with your health goals and get help when you need it.
             </p>
           </div>
         </div>

@@ -1,3 +1,3 @@
-# umedmedical
+# allmedhomecare
 
-Repository for www.umedmedical.com
+Repository for www.allmedhomecare.com
